@@ -1,20 +1,18 @@
 name: Wakatime stats
 
 on:
+  # for manual workflow trigger
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * 1"  # Runs at 12 PM UTC every Monday
+    # runs at 12 PM UTC every Monday
+    - cron: "0 12 * * 1"
 
 jobs:
   update-readme:
     name: Update Readme with Metrics
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Update README with athul/waka-readme
-        uses: athul/waka-readme@master
+      - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -26,29 +24,15 @@ jobs:
           LANG_COUNT: 10 
           SHOW_TIME: true 
           SHOW_TOTAL: true 
-
-      - name: Commit changes from athul/waka-readme
-        run: |
-          git config --global user.name "GitHubActionBot"
-          git config --global user.email "action-bot@github.com"
-          git add README.md
-          git commit -m "Updated waka-readme section" || echo "No changes to commit"
-          git push
-
-      - name: Update README with anmol098/waka-readme-stats
-        uses: anmol098/waka-readme-stats@master
+      
+      - uses: anmol098/waka-readme-stats@master #PLEASE USE MASTER BRANCH
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SECTION_NAME: "False"
           SHOW_PROJECTS: "False"
+          COMMIT_BY_ME: "False"
           SHOW_LINES_OF_CODE: "False"
           SHOW_LOC_CHART: "False"
           SHOW_LANGUAGE_PER_REPO: "False"
           SHOW_OS: "True"
-
-      - name: Commit changes from anmol098/waka-readme-stats
-        run: |
-          git add README.md
-          git commit -m "Updated waka-readme-stats section" || echo "No changes to commit"
-          git push
