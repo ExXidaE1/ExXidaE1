@@ -22,5 +22,3 @@ Image (svg)        2 hrs 33 mins   ░░░░░░░░░░░░░░░
 
 <!--END_SECTION:waka-->
 
-<!--START_SECTION:lala-->
-<!--END_SECTION:lala-->
