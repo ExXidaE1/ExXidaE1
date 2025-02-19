@@ -2,25 +2,23 @@
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-307%20hrs%2051%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
+```go
+From: 17 September 2024 - To: 18 February 2025
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-0%20lines%20of%20code-blue)
+Total Time: 279 hrs 26 mins
 
-**🐱 My GitHub Data** 
+Python             198 hrs 43 mins ████████████████░░░░░░░░░   64.55 %
+Other              28 hrs 25 mins  ██░░░░░░░░░░░░░░░░░░░░░░░   09.23 %
+CSS                18 hrs 40 mins  ██░░░░░░░░░░░░░░░░░░░░░░░   06.07 %
+JSON               18 hrs 3 mins   █░░░░░░░░░░░░░░░░░░░░░░░░   05.86 %
+Markdown           15 hrs 9 mins   █░░░░░░░░░░░░░░░░░░░░░░░░   04.92 %
+Go                 11 hrs 50 mins  █░░░░░░░░░░░░░░░░░░░░░░░░   03.85 %
+Text               3 hrs 20 mins   ░░░░░░░░░░░░░░░░░░░░░░░░░   01.09 %
+SQL                3 hrs 10 mins   ░░░░░░░░░░░░░░░░░░░░░░░░░   01.03 %
+Docker             2 hrs 47 mins   ░░░░░░░░░░░░░░░░░░░░░░░░░   00.91 %
+Image (svg)        2 hrs 33 mins   ░░░░░░░░░░░░░░░░░░░░░░░░░   00.83 %
+```
 
-> 📦 47 Bytes Used in GitHub's Storage 
- > 
-> 🏆 43 Contributions in the Year 2025
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 1 Public Repository 
- > 
-> 🔑 0 Private Repository 
- > 
-
- Last Updated on 19/02/2025 00:41:52 UTC
 <!--END_SECTION:waka-->
 
